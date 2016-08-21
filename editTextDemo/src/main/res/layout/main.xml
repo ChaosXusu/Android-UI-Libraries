@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:gravity="center"
+        android:paddingRight="10.0dp"
+        android:paddingLeft="10.0dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_back"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/title_comm"
+            android:gravity="center"
+            android:text="@string/share"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="web"
+            android:background="@color/white"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:lineSpacingExtra="6.0dp"
+            android:paddingLeft="10.0dp"
+            android:paddingRight="10.0dp"
+            android:paddingTop="10.0dp"
+            android:text="@string/content"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:padding="10.0dp"
+            android:text="140"
+            android:textColor="@color/black"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
